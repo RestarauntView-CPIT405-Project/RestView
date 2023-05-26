@@ -7,7 +7,7 @@ export default function HomePage() {
         <div>
             <section className="main"> {/* cover page */}
                 <div>
-                    <h2>Welcome to <span>Restaurants Views</span></h2>
+                    <h2>Welcome to Restaurants Views</h2>
                     <h3>A website where you can rate and see resturants ratings</h3>
                     <a href="#Resturants" className="main_btn">See Restaurants</a>
                 </div>
