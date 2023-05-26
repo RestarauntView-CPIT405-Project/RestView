@@ -1,6 +1,7 @@
 import React from "react";
 import Header from '../components/Header';
 import './NotFound.css';
+// TODO: design not found page properly
 export default function NotFound() {
     return (
         <div>

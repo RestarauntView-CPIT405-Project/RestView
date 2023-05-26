@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import React from "react";
-import './SignIn.css';
+import './SignUp.css';
 
 // TODO: validateForm()
 
