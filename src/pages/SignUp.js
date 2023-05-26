@@ -31,7 +31,7 @@ export default function SignIn() {
                         <input type="password" id="password" name="password" placeholder="Enter your password"></input>
                     </div>
                     <button className="submit-btn" type="submit">Sign Up</button>
-                    <p className="signin-text">Already have an account? <Link to="signin">Sign in</Link></p>
+                    <p className="signin-text">Already have an account? <a href="signin">Sign in</a></p>
                 </form>
             </div>
             <Outlet />
