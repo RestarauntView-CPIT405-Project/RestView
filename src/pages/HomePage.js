@@ -39,7 +39,8 @@ export default function HomePage() {
 
                     <div class="Resturants_card">
                         <div class="Resturant-image">
-                            <img src="Images/I'm hungry.jpg" height="220px" width="270px"></img>
+                            <img src="/images/Iamhungry.jpg" height="220px" width="270px"></img>
+                            
                         </div>
                         <div class="Resturant_info_info">
                             <h3>I'm Hungry</h3>
