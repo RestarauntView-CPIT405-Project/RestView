@@ -70,7 +70,7 @@ export default function SignUp() {
     <div className="container">
       <div className="form-container">
         <h1 className="title">Sign Up</h1>
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" action="./components/connect.php" onSubmit={handleSubmit} method="POST">
           <div className="input-container">
             <label htmlFor="username">Username</label>
             <input
@@ -127,7 +127,7 @@ export default function SignUp() {
             />
           </div>
 
-          <button className="submit-btn" type="submit">
+          <button className="submit-btn" type="submit" value="send">
             Sign Up
           </button>
 
