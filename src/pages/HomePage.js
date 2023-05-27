@@ -1,5 +1,10 @@
 import React from "react";
-import './HomePage.css';
+// import './HomePage.css';
+import AbuZaidImg from "../images/Abu zaid.jpg"
+import ZafranImg from "../images/p-1.jpg"
+import ImHungryImg from "../images/Iamhungry.jpg"
+// import AbuZaidImg from "../images/Abu zaid.jpg"
+// import AbuZaidImg from "../images/Abu zaid.jpg"
 
 // TODO: fix image imports
 export default function HomePage() {
@@ -19,7 +24,7 @@ export default function HomePage() {
 
                         <div class="Resturants_card">
                             <div class="Resturant-image">
-                                <img src="../images/p-1.jpg" height="220px" width="270px"></img>
+                                <img src={ZafranImg} height="220px" width="270px"></img>
                             </div>
                             <div class="Resturant_info_info">
                                 <h3>Zafran</h3>
@@ -42,7 +47,7 @@ export default function HomePage() {
 
                     <div class="Resturants_card">
                         <div class="Resturant-image">
-                            <img src="/images/Iamhungry.jpg" height="220px" width="270px"></img>
+                            <img src={ImHungryImg} height="220px" width="270px"></img>
                           
                         </div>
                         <div class="Resturant_info_info">
