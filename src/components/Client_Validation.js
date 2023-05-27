@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
     
     
 
-export default function Client_Validation(event){
+export default function Validation(event){
 
     // TODO: Server-side validation
 
