@@ -3,14 +3,9 @@ import { Link } from 'react-router-dom';
     
     
 
-export default function Client_Validation(){
-    // event.preventDefault();
-    // const data = new FormData(event.target);
+export default function Client_Validation(event){
 
-    // fetch('../pages/Server_Validation.php', {
-    //     method: 'POST',
-    //     body: data
-    //   })
+    // TODO: Server-side validation
 
     let Fname = document.forms ["MyForm" ] ["firstname"].value;
     let Lname = document.forms ["MyForm"] ["lastname"].value;
@@ -59,6 +54,6 @@ export default function Client_Validation(){
 
     //If validation has failed for any input field, do not submit the form
     if(!isValid) {
-    // event.preventDefault();
+    event.preventDefault();
     }
 }
