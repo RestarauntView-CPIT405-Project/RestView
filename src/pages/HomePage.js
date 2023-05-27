@@ -16,6 +16,7 @@ export default function HomePage() {
                 <section class="Resturant"> {/* restaurant list */}
                     <h2 class="title">Resturants</h2>
                     <div class="content">
+
                         <div class="Resturants_card">
                             <div class="Resturant-image">
                                 <img src="../images/p-1.jpg" height="220px" width="270px"></img>
@@ -37,6 +38,8 @@ export default function HomePage() {
                         </div>
                     </div>
 
+
+
                     <div class="Resturants_card">
                         <div class="Resturant-image">
                             <img src="/images/Iamhungry.jpg" height="220px" width="270px"></img>
@@ -56,6 +59,31 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+
+
+
+                    <div class="Resturants_card">
+                        <div class="Resturant-image">
+                            <img src="/images/Albaikk.png" height="220px" width="270px"></img>
+                            
+                        </div>
+                        <div class="Resturant_info_info">
+                            <h3>Albaik</h3>
+                            <p>Fast Food - Burgers</p>
+                            <div class="restaurantRate" data-restaurant="B">
+                                <div class="rating">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <div class="Resturants_card">
                         <div class="Resturant-image">
                             <a href="Reviews/revs.html">
@@ -81,6 +109,9 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+
+
+
                     <div class="Resturants_card">
                         <div class="Resturant-image">
                             <img src="images/shawarmer.png" height="220px" width="270px"></img>
@@ -102,6 +133,9 @@ export default function HomePage() {
                 </section>
             </div>
             <div>
+
+
+                
                 <section class="product" id="menu">
                     <h2 class="title">Best Ratings</h2>
                     <button class="pre-btn"><img src="images/arrow.png" alt=""></img></button>
