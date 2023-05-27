@@ -11,6 +11,7 @@ import ReviewPage from './pages/ReviewPage';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import BestRatings from './pages/BestRatings';
+import Client_Validation from './pages/Client_Validation';
 
 export default function App() {
   return(
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="signin" element={<SignIn />}></Route>
           <Route path="signup" element={<SignUp />}></Route>
           <Route path="bestratings" element={<BestRatings />}></Route>
+          <Route path="Client_Validation" element={<Client_Validation />}></Route>
           <Route path="*" element={<NotFound />}></Route>
           
       </Route>

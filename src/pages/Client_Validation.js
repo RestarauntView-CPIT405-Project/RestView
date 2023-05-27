@@ -1,4 +1,10 @@
-function validateForm(event) {
+import React from "react";
+import Header from '../components/Header';
+import HomePage from './HomePage';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import ReactDOM from 'react-dom/client';
+export default function Client_Validation(event) {
     let Fname = document.forms ["MyForm" ] ["firstname"].value;
     let Lname = document.forms ["MyForm"] ["lastname"].value;
     let Uname = document.forms ["MyForm"] ["username"].value;

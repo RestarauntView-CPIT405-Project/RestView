@@ -1,5 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import React from "react";
+import HomePage from './HomePage';
+import Client_Validation from './Client_Validation';
+
 import './SignUp.css';
 
 // TODO: validateForm()
@@ -9,7 +12,7 @@ export default function SignIn() {
         <div className="container">
             <div className="form-container">
                 <h1 className="title">Sign Up</h1>
-                <form id="MyForm" action="src\pages\Server_Validation.php" onSubmit={validateForm(event)} method="post">
+                <form id="MyForm" action="./Server_Validation.php" onSubmit="Client_Validation(event)" method="post">
                     <div className="input-container">
                         <label for="username">Username</label>
                         <input type="text" id="username" name="username" placeholder="Enter your username"></input>
@@ -34,7 +37,6 @@ export default function SignIn() {
                     <p className="signin-text">Already have an account? <a href="signin">Sign in</a></p>
                 </form>
                          <div id="error-message"></div>
-                         <script src="./Client_Validation.js"></script>
             </div>
             <Outlet />
         </div>
