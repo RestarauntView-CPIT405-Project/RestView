@@ -1,5 +1,5 @@
 function validateForm(event) {
-    let Fnname = document.forms ["MyForm" ] ["firstname"].value;
+    let Fname = document.forms ["MyForm" ] ["firstname"].value;
     let Lname = document.forms ["MyForm"] ["lastname"].value;
     let Uname = document.forms ["MyForm"] ["username"].value;
     let email = document.forms ["MyForm"] ["email"].value;
@@ -10,16 +10,16 @@ function validateForm(event) {
     let isValid = true;
 
     //Fname validation
-    const FirstNameRegExp = /^{8, 32}$/;
-    if (Fnname == "" || !FirstNameRegExp.test(Fnname)) {
-    errorMessageElem.innerHTML += "<p>Invalid First name. First name must be between 8 and 32 charecter</p>";
+    const FirstNameRegExp = /^{2, 15}$/;
+    if (Fname == "" || !FirstNameRegExp.test(Fname)) {
+    errorMessageElem.innerHTML += "<p>Invalid First name. First name must be between 2 and 15 charecter</p>";
     isValid = false;
     }
 
     //Lname validation
-    const LastNameRegExp = /^{8, 32}$/;
+    const LastNameRegExp = /^{2, 15}$/;
     if (Lname == "" || !LastNameRegExp.test(Lname)) {
-    errorMessageElem.innerHTML += "<p>Invalid Last name. Last name must be between 8 and 32 charecter</p>";
+    errorMessageElem.innerHTML += "<p>Invalid Last name. Last name must be between 2 and 15 charecter</p>";
     isValid = false;
     }
 
