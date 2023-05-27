@@ -1,6 +1,7 @@
 import React from "react";
 import './HomePage.css';
 // TODO: finish rest of homepage
+
 export default function HomePage() {
     return (
         <div>

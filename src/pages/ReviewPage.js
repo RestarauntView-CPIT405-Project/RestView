@@ -1,142 +1,94 @@
-// TODO: Add code for review page
-import React, { Fragment } from "react";
-import Header from '../components/Header';
-import script from "https://kit.fontawesome.com/c8e4d183c2.js";
-import "./ReviewPage.css"
-export default function ReviewPage() {
-    return (
-        <div>
-            <div class="Rest-img">
+//TODO: Do rev page
+//TODO: Git resturant name/pic and save comments
+import React, { useState } from 'react';
+import './ReviewPage.css';
 
-                <img src="images/Abu zaid.jpg" height="150" width="250" />
+export default function Comments() {
+  const [username, setUsername] = useState(localStorage.getItem('username') || '');
+  const [comments, setComments] = useState([]);
+  const [rating, setRating] = useState(0);
+  const [commentText, setCommentText] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (!username) {
+      alert('Please sign up to submit a comment.');
+      return;
+    }
+
+    // Create a new comment object
+    const newComment = {
+      rating,
+      commentText,
+      username: username,
+      date: new Date().toLocaleDateString()
+    };
+
+    // Add the new comment to the comments array
+    setComments([...comments, newComment]);
+
+    // Reset the rating and comment text
+    setRating(0);
+    setCommentText('');
+  };
+
+  return (
+    <div className="comments-container">
+      <h1>Restaurant Comments</h1>
+      <div className="comments-list">
+        {comments.length === 0 ? (
+          <p>No comments yet. Be the first to leave a comment!</p>
+        ) : (
+          comments.map((comment, index) => (
+            <div className="comment" key={index}>
+              <div className="comment-info">
+                <span className="username">{comment.username}</span>
+                <span className="date">{comment.date}</span>
+                <div className="rating">
+                  {Array.from({ length: comment.rating }).map((_, index) => (
+                    <span key={index} className="star" role="img" aria-label="star">
+                      ⭐️
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <p className="comment-text">{comment.commentText}</p>
             </div>
-            <div class="testimonial-heading">
-                <h1>Comments and Ratings</h1>
-            </div>
-            <div class="testimonial-box-container">
-
-                <div class="testimonial-box">
-
-                    <div class="box-top">
-
-                        <div class="profile">
-
-                            <div class="profile-img">
-                                <img src="../images/c-2.png" />
-                            </div>
-                            {/* <!--name-and-username--> */}
-                            <div class="name-user">
-                                <strong>Ahmad Ali</strong>
-                                <span>@AhmadAli1999</span>
-                            </div>
-                        </div>
-                        {/* <!--reviews------> */}
-                        <div class="reviews">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            {/* <!--Empty star--> */}
-                        </div>
-                    </div>
-                    {/* <!--Comment----------------------------------------> */}
-                    <div class="client-comment">
-                        <p>Bad service and the food isn't the best</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-box">
-
-                <div class="box-top">
-                    {/* <!--profile-----> */}
-                    <div class="profile">
-                        {/* <!--img----> */}
-                        <div class="profile-img">
-                            <img src="images/c-2.png" />
-                        </div>
-
-                        <div class="name-user">
-                            <strong>Mohammed Adel</strong>
-                            <span>@MDL99</span>
-                        </div>
-                    </div>
-
-                    <div class="reviews">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        {/* <!--Empty star--> */}
-                    </div>
-                </div>
-
-                <div class="client-comment">
-                    <p> good taste but the service isn't that good, i waited so long to get my order.. other than this
-                        everything is great. </p>
-                </div>
-            </div>
-            <div class="testimonial-box">
-
-                <div class="box-top">
-
-                    <div class="profile">
-
-                        <div class="profile-img">
-                            <img src="images/c-2.png" />
-                        </div>
-
-                        <div class="name-user">
-                            <strong>Yousef</strong>
-                            <span>@Ysf2000</span>
-                        </div>
-                    </div>
-
-                    <div class="reviews">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        {/* <!--Empty star--> */}
-                    </div>
-                </div>
-
-                <div class="client-comment">
-                    <p> Great place and tasty food but the service is a little bit slow.</p>
-                </div>
-            </div>
-
-            <div class="testimonial-box">
-
-                <div class="box-top">
-
-                    <div class="profile">
-
-                        <div class="profile-img">
-                            <img src="images/c-2.png" />
-                        </div>
-
-                        <div class="name-user">
-                            <strong>Abdulrahman</strong>
-                            <span>@Dhom11</span>
-                        </div>
-                    </div>
-
-                    <div class="reviews">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-
-                <div class="client-comment">
-                    <p>I recommend visiting this resturant, but the service can be faster.</p>
-                </div>
-            </div>
+          ))
+        )}
+      </div>
+      <form className="comment-form" onSubmit={handleSubmit}>
+        <h2>Leave a Comment</h2>
+        <div className="rating-input">
+          <label htmlFor="rating">Rating:</label>
+          <div className="stars">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <span
+                key={star}
+                className={`star ${star <= rating ? 'filled' : ''}`}
+                role="button"
+                onClick={() => setRating(star)}
+              >
+                ⭐️
+              </span>
+            ))}
+          </div>
         </div>
-    )
+        <div className="comment-input">
+          <label htmlFor="commentText">Comment:</label>
+          <textarea
+            id="commentText"
+            name="commentText"
+            placeholder="Write your comment here..."
+            value={commentText}
+            onChange={(e) => setCommentText(e.target.value)}
+          />
+        </div>
+        <button className="submit-btn" type="submit">
+          Submit Comment
+        </button>
+      </form>
+    </div>
+  );
 }
