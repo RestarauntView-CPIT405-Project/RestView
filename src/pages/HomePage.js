@@ -43,7 +43,7 @@ export default function HomePage() {
                     <div class="Resturants_card">
                         <div class="Resturant-image">
                             <img src="/images/Iamhungry.jpg" height="220px" width="270px"></img>
-                            
+                          
                         </div>
                         <div class="Resturant_info_info">
                             <h3>I'm Hungry</h3>
@@ -135,7 +135,7 @@ export default function HomePage() {
             <div>
 
 
-                
+
                 <section class="product" id="menu">
                     <h2 class="title">Best Ratings</h2>
                     <button class="pre-btn"><img src="images/arrow.png" alt=""></img></button>
