@@ -6,7 +6,7 @@ export default function SignIn() {
             <div className="container">
                 <div className="form-container">
                     <h1 className="title">Sign In</h1>
-                    <form className="form" action="#" method="post" onsubmit="return validateForm()">
+                    <form id="MyForm" action="Server_Validation.php" onsubmit="validateForm(event)" method="post">
                         <div className="input-container">
                             <label for="username">Username</label>
                             <input type="text" id="username" name="username" placeholder="Enter your username"></input>

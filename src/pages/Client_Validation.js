@@ -1,9 +1,9 @@
 function validateForm(event) {
-    let Fnname = document.forms ["myForm" ] ["firstname"].value;
-    let Lname = document.forms ["myForm"] ["lastname"].value;
-    let Uname = document.forms ["myForm"] ["username"].value;
-    let email = document.forms ["myForm"] ["email"].value;
-    let password = document.forms ["myForm"] ["password"].value;
+    let Fnname = document.forms ["MyForm" ] ["firstname"].value;
+    let Lname = document.forms ["MyForm"] ["lastname"].value;
+    let Uname = document.forms ["MyForm"] ["username"].value;
+    let email = document.forms ["MyForm"] ["email"].value;
+    let password = document.forms ["MyForm"] ["password"].value;
 
     let errorMessageElem = document.getElementById ("error-message");
     errorMessageElem.innerHTML = "";
