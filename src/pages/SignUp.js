@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import HomePage from './HomePage';
-import Validation from '../components/Client_Validation';
+import Client_Validation from '../components/Client_Validation';
 import './SignUp.css';
 
 
@@ -10,7 +10,7 @@ export default function SignUp() {
         <div className="container">
             <div className="form-container">
                 <h1 className="title">Sign Up</h1>
-                <form id="MyForm" encrypt="text/plain" onSubmit={Validation}>
+                <form id="MyForm" onSubmit={Client_Validation}>
                     <div className="input-container">
                         <label for="firstname">First Name</label>
                         <input type="text" id="firstname" name="firstname" placeholder="Enter your first name"></input>
@@ -36,6 +36,28 @@ export default function SignUp() {
                 </form>
                          <div id="error-message"></div>
             </div>
-        </div>
-    )
+          )}
+
+          <p className="signin-text">
+            Already have an account? <Link to="/signin">Sign in</Link>
+          </p>
+        </form>
+      </div>
+      <Outlet />
+    </div>
+  );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

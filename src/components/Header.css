@@ -37,3 +37,25 @@ header {
   .navigation a:hover {
     color: rgb(104, 15, 15);
   }
+  .user-menu {
+    position: relative;
+    background-color: aqua;
+    font-size: 18px;
+    font-style: initial;
+    text-align: center;
+    
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 5px;
+  }
