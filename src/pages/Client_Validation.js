@@ -25,7 +25,7 @@ function validateForm(event) {
 
     //Uname validation
     const userNameRegExp = /^([a-zA-Z0-9_-]){8,32}$/;
-    if (Fnname == "" || !userNameRegExp.test(Fnname)) {
+    if (Uname == "" || !userNameRegExp.test(Uname)) {
     errorMessageElem.innerHTML += "<p>Invalid user name. User name must be between 8 and 32 charecter</p>";
     isValid = false;
     }
