@@ -1,10 +1,17 @@
-import React from "react";
-import Header from '../components/Header';
-import HomePage from './HomePage';
-import SignIn from './SignIn';
-import SignUp from './SignUp';
-import ReactDOM from 'react-dom/client';
-export default function Client_Validation(event) {
+import React from 'react';
+import { Link } from 'react-router-dom';
+    
+    
+
+export default function Client_Validation(){
+    // event.preventDefault();
+    // const data = new FormData(event.target);
+
+    // fetch('../pages/Server_Validation.php', {
+    //     method: 'POST',
+    //     body: data
+    //   })
+
     let Fname = document.forms ["MyForm" ] ["firstname"].value;
     let Lname = document.forms ["MyForm"] ["lastname"].value;
     let Uname = document.forms ["MyForm"] ["username"].value;
@@ -52,6 +59,6 @@ export default function Client_Validation(event) {
 
     //If validation has failed for any input field, do not submit the form
     if(!isValid) {
-    event.preventDefault();
+    // event.preventDefault();
     }
 }
