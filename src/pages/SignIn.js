@@ -18,6 +18,8 @@ export default function SignIn() {
                         <button className="submit-btn" type="submit">Sign In</button>
                         <p className="signin-text">Don't have an account? <a href="signup">Sign up</a></p>
                     </form>
+                    <div id="error-message"></div>
+                    <script src="./Client_Validation.js"></script>
                 </div>
             </div>
         </div>
