@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import './SignIn.css';
-import HomePage from './HomePage';
 import Validation from '../components/Client_Validation';
 
 export default function SignIn() {
@@ -19,9 +19,9 @@ export default function SignIn() {
                             <input type="password" id="password" name="password" placeholder="Enter your password"></input>
                         </div>
                         <button className="submit-btn" type="submit">Sign In</button>
-                        <p className="signin-text">Don't have an account? <a href="signup">Sign up</a></p>
+                        <p className="signin-text">Don't have an account? <Link to="/signup">Sign up</Link></p>
                     </form>
-                    
+
                 </div>
             </div>
         </div>

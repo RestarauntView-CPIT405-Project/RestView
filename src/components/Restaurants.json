@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "Name": "Abu Zaid",
+        "Rating": 4.7,
+        "Image": "../images/Abu zaid.jpg",
+        "NumOfReviews": 15
+    },
+    {
+        "id": 2,
+        "Name": "Albaik",
+        "Rating": 4.9,
+        "Image": "../images/Albaik.jpg",
+        "NumOfReviews": 30
+    },
+    {
+        "id": 3,
+        "Name": "I'm Hungry",
+        "Rating": 4.4,
+        "Image": "../images/Iamhungry.jpg",
+        "NumOfReviews": 22
+    },
+    {
+        "id": 4,
+        "Name": "Shawarmer",
+        "Rating": 4.3,
+        "Image": "../images/shawarmer.afiv",
+        "NumOfReviews": 19
+    },
+    {
+        "id": 5,
+        "Name": "Seeneez",
+        "Rating": 4.8,
+        "Image": "../images/seeneez.png",
+        "NumOfReviews": 12
+    },
+    {
+        "id": 6,
+        "Name": "Onion Rings",
+        "Rating": "&#9733;",
+        "Image": "../images/onionRing.jpg",
+        "NumOfReviews": 10
+    },
+    {
+        "id": 7,
+        "Name": "Abu Zaid",
+        "Rating": "&#9733;",
+        "Image": "../images/Abu zaid.jpg",
+        "NumOfReviews": 10
+    },
+    {
+        "id": 8,
+        "Name": "Abu Zaid",
+        "Rating": "&#9733;",
+        "Image": "../images/Abu zaid.jpg",
+        "NumOfReviews": 10
+    },
+    {
+        "id": 9,
+        "Name": "Abu Zaid",
+        "Rating": "&#9733;",
+        "Image": "../images/Abu zaid.jpg",
+        "NumOfReviews": 10
+    },
+    {
+        "id": 10,
+        "Name": "Abu Zaid",
+        "Rating": "&#9733;",
+        "Image": "../images/Abu zaid.jpg",
+        "NumOfReviews": 10
+    }
+]
