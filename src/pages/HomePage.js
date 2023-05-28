@@ -18,8 +18,8 @@ export default function HomePage() {
             <div>
                 <section class="Resturant"> {/* restaurant list */}
                     <h2 class="title">Restaurants</h2>
+                    <div class="content">
                     {Restaurants.map((Restaurant) => (
-                        <div class="content">
 
                             <div class="Resturants_card" key={Restaurant.id}>
                                 <div class="Resturant-image">
@@ -42,9 +42,10 @@ export default function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>))
+                        
+                        ))
                     }
-            
+            </div>
 
 
 
