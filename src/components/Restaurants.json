@@ -4,69 +4,79 @@
         "Name": "Abu Zaid",
         "Rating": 4.7,
         "Image": "../images/Abu zaid.jpg",
-        "NumOfReviews": 15
+        "NumOfReviews": 15,
+        "Description": "Arabic - Breakfast"
     },
     {
         "id": 2,
         "Name": "Albaik",
         "Rating": 4.9,
         "Image": "../images/Albaik.jpg",
-        "NumOfReviews": 30
+        "NumOfReviews": 30,
+        "Description": "Fast Food - Burgers"
     },
     {
         "id": 3,
         "Name": "I'm Hungry",
         "Rating": 4.4,
         "Image": "../images/Iamhungry.jpg",
-        "NumOfReviews": 22
+        "NumOfReviews": 22,
+        "Description": "Fast Food - Beverages - Burgers"
     },
     {
         "id": 4,
         "Name": "Shawarmer",
         "Rating": 4.3,
         "Image": "../images/shawarmer.afiv",
-        "NumOfReviews": 19
+        "NumOfReviews": 19,
+        "Description": "Fast Food - Arabic - Shawarma & Doner - Sandwiches"
     },
     {
         "id": 5,
         "Name": "Seeneez",
         "Rating": 4.8,
         "Image": "../images/seeneez.png",
-        "NumOfReviews": 12
+        "NumOfReviews": 12,
+        "Description": "Arabic - Breakfast"
     },
     {
         "id": 6,
-        "Name": "Onion Rings",
+        "Name": "Turkoise",
         "Rating": "&#9733;",
         "Image": "../images/onionRing.jpg",
-        "NumOfReviews": 10
+        "NumOfReviews": 10,
+        "Description": "Arabic - Breakfast"
     },
     {
         "id": 7,
         "Name": "Abu Zaid",
         "Rating": "&#9733;",
         "Image": "../images/Abu zaid.jpg",
-        "NumOfReviews": 10
+        "NumOfReviews": 10,
+        "Description": "Arabic - Breakfast"
     },
     {
         "id": 8,
         "Name": "Abu Zaid",
         "Rating": "&#9733;",
         "Image": "../images/Abu zaid.jpg",
-        "NumOfReviews": 10
+        "NumOfReviews": 10,
+        "Description": "Arabic - Breakfast"
     },
     {
         "id": 9,
         "Name": "Abu Zaid",
         "Rating": "&#9733;",
         "Image": "../images/Abu zaid.jpg",
-        "NumOfReviews": 10
+        "NumOfReviews": 10,
+        "Description": "Arabic - Breakfast"
     },
     {
         "id": 10,
         "Name": "Abu Zaid",
         "Rating": "&#9733;",
         "Image": "../images/Abu zaid.jpg",
-        "NumOfReviews": 10
+        "NumOfReviews": 10,
+        "Description": "Arabic - Breakfast"
     }
 ]

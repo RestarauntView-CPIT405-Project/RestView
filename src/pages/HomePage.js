@@ -28,7 +28,7 @@ export default function HomePage() {
                                 </div>
                                 <div class="Resturant_info_info">
                                     <h3>{Restaurant.Name}</h3>
-                                    <p>Indian bistro</p>
+                                    <p>{Restaurant.Description}</p>
                                     <div class="restaurantRate" data-restaurant="A">
 
                                         <div class="rating">
