@@ -3,7 +3,7 @@
         "id": 1,
         "Name": "Abu Zaid",
         "Rating": 4.7,
-        "Image": "../images/Abu zaid.jpg",
+        "Image": "/images/Abu zaid.jpg",
         "NumOfReviews": 15,
         "Description": "Arabic - Breakfast"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "Name": "Albaik",
         "Rating": 4.9,
-        "Image": "../images/Albaik.jpg",
+        "Image": "/images/Albaik.jpg",
         "NumOfReviews": 30,
         "Description": "Fast Food - Burgers"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "Name": "I'm Hungry",
         "Rating": 4.4,
-        "Image": "../images/Iamhungry.jpg",
+        "Image": "/images/Iamhungry.jpg",
         "NumOfReviews": 22,
         "Description": "Fast Food - Beverages - Burgers"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "Name": "Shawarmer",
         "Rating": 4.3,
-        "Image": "../images/shawarmer.afiv",
+        "Image": "/images/shawarmer.png",
         "NumOfReviews": 19,
         "Description": "Fast Food - Arabic - Shawarma & Doner - Sandwiches"
     },
@@ -35,48 +35,48 @@
         "id": 5,
         "Name": "Seeneez",
         "Rating": 4.8,
-        "Image": "../images/seeneez.png",
+        "Image": "/images/seeneez.png",
         "NumOfReviews": 12,
         "Description": "Arabic - Breakfast"
     },
     {
         "id": 6,
         "Name": "Turkoise",
-        "Rating": "&#9733;",
-        "Image": "../images/onionRing.jpg",
+        "Rating": 4.8,
+        "Image": "/images/turkuoise.jpg",
         "NumOfReviews": 10,
         "Description": "Arabic - Breakfast"
     },
     {
         "id": 7,
-        "Name": "Abu Zaid",
-        "Rating": "&#9733;",
-        "Image": "../images/Abu zaid.jpg",
+        "Name": "Al Tazaj",
+        "Rating": 4.4,
+        "Image": "/images/tazaj.jpg",
         "NumOfReviews": 10,
         "Description": "Arabic - Breakfast"
     },
     {
         "id": 8,
-        "Name": "Abu Zaid",
-        "Rating": "&#9733;",
-        "Image": "../images/Abu zaid.jpg",
+        "Name": "Subway",
+        "Rating": 4.5,
+        "Image": "/images/subway-logo.jpg",
         "NumOfReviews": 10,
         "Description": "Arabic - Breakfast"
     },
     {
         "id": 9,
-        "Name": "Abu Zaid",
-        "Rating": "&#9733;",
-        "Image": "../images/Abu zaid.jpg",
+        "Name": "KFC",
+        "Rating": 4.7,
+        "Image": "/images/kfc.jpg",
         "NumOfReviews": 10,
         "Description": "Arabic - Breakfast"
     },
     {
         "id": 10,
-        "Name": "Abu Zaid",
-        "Rating": "&#9733;",
-        "Image": "../images/Abu zaid.jpg",
+        "Name": "Rami",
+        "Rating": 4.4,
+        "Image": "/images/rami.jpg",
         "NumOfReviews": 10,
-        "Description": "Arabic - Breakfast"
+        "Description": "Broasted - Burger"
     }
 ]

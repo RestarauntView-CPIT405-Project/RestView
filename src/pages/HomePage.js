@@ -32,7 +32,7 @@ export default function HomePage() {
                                     <div class="restaurantRate" data-restaurant="A">
 
                                         <div class="rating">
-                                            <span>{Restaurant.Rating}</span>
+                                            <span class="Rating">{Restaurant.Rating}<span class="star" data-value="1">&#9733;</span></span>
                                             {/* <span class="star" data-value="1">&#9733;</span>
                                             <span class="star" data-value="2">&#9733;</span>
                                             <span class="star" data-value="3">&#9733;</span>
