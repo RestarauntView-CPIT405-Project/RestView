@@ -1,10 +1,6 @@
 import React from "react";
 // import './HomePage.css';
 import Restaurants from "../components/Restaurants.json";
-// import AbuZaidImg from "../images/Abu zaid.jpg"
-// import AbuZaidImg from "../images/Abu zaid.jpg"
-
-// TODO: fix image imports
 export default function HomePage() {
     return (
         <div>
@@ -20,7 +16,8 @@ export default function HomePage() {
                     <h2 class="title">Restaurants</h2>
                     <div class="content">
                     {Restaurants.map((Restaurant) => (
-
+                        // TODO: Make that the card links to a page and passing the ID of the restaurant
+                        // for data retrieval.
                             <div class="Resturants_card" key={Restaurant.id}>
                                 <div class="Resturant-image">
                                     <img src={Restaurant.Image} height="220px" width="270px"></img>
@@ -143,7 +140,7 @@ export default function HomePage() {
             </div >
         <div>
 
-
+            {/* TODO: Edit this section? */}
 
             <section class="product" id="menu">
                 <h2 class="title">Best Ratings</h2>
