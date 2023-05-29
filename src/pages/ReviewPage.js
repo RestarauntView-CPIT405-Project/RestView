@@ -1,9 +1,8 @@
-//TODO: Do rev page
-//TODO: Git resturant name/pic and save comments
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './ReviewPage.css';
 import Restaurants from "../components/Restaurants.json";
+
 export default function Comments() {
   const location = useLocation();
   const restaurantId = location.state.id;
@@ -13,40 +12,8 @@ export default function Comments() {
   const [rating, setRating] = useState(0);
   const [commentText, setCommentText] = useState('');
 
-  Restaurants.map((Restaurant) => {
-    if (restaurantId == Restaurant.id) {
-      console.log(Restaurant.Name)
-      return (
-        <div>
-          <div class="Resturants_card" key={Restaurant.id}>
-            <div class="Resturant-image">
-              <img src={Restaurant.Image} height="220px" width="270px"></img>
-
-            </div>
-            <div class="Resturant_info_info">
-              <h3>{Restaurant.Name}</h3>
-              <p>{Restaurant.Description}</p>
-              <div class="restaurantRate" data-restaurant="A">
-
-                <div class="rating">
-                  <span class="Rating">{Restaurant.Rating}<span class="star" data-value="1">&#9733;</span></span>
-                  {/* <span class="star" data-value="1">&#9733;</span>
-                                            <span class="star" data-value="2">&#9733;</span>
-                                            <span class="star" data-value="3">&#9733;</span>
-                                            <span class="star" data-value="4">&#9733;</span>
-                                            <span class="star" data-value="5">&#9733;</span> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    }
-
-  }
-  )
-
-
+  // Find the matching restaurant based on the restaurantId
+  const restaurant = Restaurants.find((restaurant) => restaurant.id === restaurantId);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -74,6 +41,23 @@ export default function Comments() {
 
   return (
     <div className="comments-container">
+      {restaurant && (
+        <div className="Resturants_card" key={restaurant.id}>
+          <div className="Resturant-image">
+            <img src={restaurant.Image} height="220px" width="270px" alt={restaurant.Name} />
+          </div>
+          <div className="Resturant_info_info">
+            <h3>{restaurant.Name}</h3>
+            <p>{restaurant.Description}</p>
+            <div className="restaurantRate" data-restaurant="A">
+              <div className="rating">
+                <span className="Rating">{restaurant.Rating}<span className="star" data-value="1">&#9733;</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <h1>Restaurant Comments</h1>
       <div className="comments-list">
         {comments.length === 0 ? (
