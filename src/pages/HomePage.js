@@ -1,7 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom"
+import React, { useState } from "react";
 // import './HomePage.css';
 import Restaurants from "../components/Restaurants.json";
 export default function HomePage() {
+    
     return (
         <div>
             <section className="main"> {/* cover page */}
@@ -15,38 +17,40 @@ export default function HomePage() {
                 <section class="Resturant"> {/* restaurant list */}
                     <h2 class="title">Restaurants</h2>
                     <div class="content">
-                    {Restaurants.map((Restaurant) => (
-                        // TODO: Make that the card links to a page and passing the ID of the restaurant
-                        // for data retrieval.
-                            <div class="Resturants_card" key={Restaurant.id}>
-                                <div class="Resturant-image">
-                                    <img src={Restaurant.Image} height="220px" width="270px"></img>
+                        {Restaurants.map((Restaurant) => (
+                            // TODO: Make that the card links to a page and passing the ID of the restaurant
+                            // for data retrieval.
+                            <Link to="/reviewpage" state={{id : Restaurant.id}}>
+                                {/* <Link to={`/reviewpage/${Restaurant.id}?name=${Restaurant.Name}`}></Link> */}
+                                <div class="Resturants_card" key={Restaurant.id}>
+                                    <div class="Resturant-image">
+                                        <img src={Restaurant.Image} height="220px" width="270px"></img>
 
-                                </div>
-                                <div class="Resturant_info_info">
-                                    <h3>{Restaurant.Name}</h3>
-                                    <p>{Restaurant.Description}</p>
-                                    <div class="restaurantRate" data-restaurant="A">
+                                    </div>
+                                    <div class="Resturant_info_info">
+                                        <h3>{Restaurant.Name}</h3>
+                                        <p>{Restaurant.Description}</p>
+                                        <div class="restaurantRate" data-restaurant="A">
 
-                                        <div class="rating">
-                                            <span class="Rating">{Restaurant.Rating}<span class="star" data-value="1">&#9733;</span></span>
-                                            {/* <span class="star" data-value="1">&#9733;</span>
+                                            <div class="rating">
+                                                <span class="Rating">{Restaurant.Rating}<span class="star" data-value="1">&#9733;</span></span>
+                                                {/* <span class="star" data-value="1">&#9733;</span>
                                             <span class="star" data-value="2">&#9733;</span>
                                             <span class="star" data-value="3">&#9733;</span>
                                             <span class="star" data-value="4">&#9733;</span>
                                             <span class="star" data-value="5">&#9733;</span> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        
+                            </Link>
                         ))
-                    }
-            </div>
+                        }
+                    </div>
 
 
 
-            {/* <div class="Resturants_card">
+                    {/* <div class="Resturants_card">
                 <div class="Resturant-image">
                     <img src={ImHungryImg} height="220px" width="270px"></img>
 
@@ -136,86 +140,86 @@ export default function HomePage() {
                     </div>
                 </div>
             </div> */}
-        </section>
+                </section>
             </div >
-        <div>
+            <div>
 
-            {/* TODO: Edit this section? */}
+                {/* TODO: Edit this section? */}
 
-            <section class="product" id="menu">
-                <h2 class="title">Best Ratings</h2>
-                <button class="pre-btn"><img src="images/arrow.png" alt=""></img></button>
-                <button class="nxt-btn"><img src="images/arrow.png" alt=""></img></button>
-                <div class="product-container">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="Rating">4.7 <span class="star" data-value="1">&#9733;</span></span>
-                            <img src="images/Abu zaid.jpg" class="product-thumb" alt=""></img>
+                <section class="product" id="menu">
+                    <h2 class="title">Best Ratings</h2>
+                    <button class="pre-btn"><img src="images/arrow.png" alt=""></img></button>
+                    <button class="nxt-btn"><img src="images/arrow.png" alt=""></img></button>
+                    <div class="product-container">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="Rating">4.7 <span class="star" data-value="1">&#9733;</span></span>
+                                <img src="images/Abu zaid.jpg" class="product-thumb" alt=""></img>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Abu Zaid</h2>
+                                <p class="product-short-description">Price range:</p>
+                                <p class="product-short-description">$$</p>
+                                <p class="product-short-description">Cuisines: </p>
+                                <p class="product-short-description">Arabic - Breakfast</p>
+                            </div>
                         </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">Abu Zaid</h2>
-                            <p class="product-short-description">Price range:</p>
-                            <p class="product-short-description">$$</p>
-                            <p class="product-short-description">Cuisines: </p>
-                            <p class="product-short-description">Arabic - Breakfast</p>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="Rating">4.9 <span class="star" data-value="1">&#9733;</span></span>
+                                <img src="images/Albaikk.png" class="product-thumb" alt=""></img>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Albaik</h2>
+                                <p class="product-short-description">Price range:</p>
+                                <p class="product-short-description"> $$ </p>
+                                <p class="product-short-description">Cuisines: </p>
+                                <p class="product-short-description">Fast Food</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="Rating">4.8 <span class="star" data-value="1">&#9733;</span></span>
+                                <img src="images/seeneez.png" class="product-thumb" alt=""></img>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Seeneez Restaurant</h2>
+                                <p class="product-short-description">Price range:</p>
+                                <p class="product-short-description"> $$$$</p>
+                                <p class="product-short-description">Cuisines: </p>
+                                <p class="product-short-description">American, Pizza, Seafood, Barbecue, Italian</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="Rating">4.8 <span class="star" data-value="1">&#9733;</span></span>
+                                <img src="images/turkuoise.jpg" class="product-thumb" alt=""></img>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">turkuoise</h2>
+                                <p class="product-short-description">Price range:</p>
+                                <p class="product-short-description"> $$-$$$</p>
+                                <p class="product-short-description">Cuisines: </p>
+                                <p class="product-short-description">Turkish, Middle Eastern, Mediterranean, European</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="Rating">4.7 <span class="star" data-value="1">&#9733;</span></span>
+                                <img src="images/BlueOs.png" class="product-thumb" alt=""></img>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Blue Ocean</h2>
+                                <p class="product-short-description">Price range:</p>
+                                <p class="product-short-description"> $$-$$$</p>
+                                <p class="product-short-description">Cuisines: </p>
+                                <p class="product-short-description">Seafood, International, Mediterranean, Fusion
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="Rating">4.9 <span class="star" data-value="1">&#9733;</span></span>
-                            <img src="images/Albaikk.png" class="product-thumb" alt=""></img>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">Albaik</h2>
-                            <p class="product-short-description">Price range:</p>
-                            <p class="product-short-description"> $$ </p>
-                            <p class="product-short-description">Cuisines: </p>
-                            <p class="product-short-description">Fast Food</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="Rating">4.8 <span class="star" data-value="1">&#9733;</span></span>
-                            <img src="images/seeneez.png" class="product-thumb" alt=""></img>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">Seeneez Restaurant</h2>
-                            <p class="product-short-description">Price range:</p>
-                            <p class="product-short-description"> $$$$</p>
-                            <p class="product-short-description">Cuisines: </p>
-                            <p class="product-short-description">American, Pizza, Seafood, Barbecue, Italian</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="Rating">4.8 <span class="star" data-value="1">&#9733;</span></span>
-                            <img src="images/turkuoise.jpg" class="product-thumb" alt=""></img>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">turkuoise</h2>
-                            <p class="product-short-description">Price range:</p>
-                            <p class="product-short-description"> $$-$$$</p>
-                            <p class="product-short-description">Cuisines: </p>
-                            <p class="product-short-description">Turkish, Middle Eastern, Mediterranean, European</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="Rating">4.7 <span class="star" data-value="1">&#9733;</span></span>
-                            <img src="images/BlueOs.png" class="product-thumb" alt=""></img>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">Blue Ocean</h2>
-                            <p class="product-short-description">Price range:</p>
-                            <p class="product-short-description"> $$-$$$</p>
-                            <p class="product-short-description">Cuisines: </p>
-                            <p class="product-short-description">Seafood, International, Mediterranean, Fusion
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
         </div >
     );
 }
