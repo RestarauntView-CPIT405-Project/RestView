@@ -29,7 +29,7 @@ export default function SignUp() {
 
       // Redirect to the homepage (you can modify this based on your routing configuration)
       localStorage.setItem("username", username);
-      navigate("/HomePage");
+      navigate("/");
     } else {
       setErrorMessages(validationErrors);
     }

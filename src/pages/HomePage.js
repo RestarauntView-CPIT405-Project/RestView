@@ -14,7 +14,7 @@ export default function HomePage() {
                 </div>
             </section>
             <div>
-                <section class="Resturant"> {/* restaurant list */}
+                <section class="Resturant" id= "Resturants"> {/* restaurant list */}
                     <h2 class="title">Restaurants</h2>
                     <div class="content">
                         {Restaurants.map((Restaurant) => (
