@@ -42,7 +42,7 @@ export default function Comments() {
   return (
     <div className="comments-container">
       {restaurant && (
-        <div className="Resturants_card" key={restaurant.id}>
+        <div className="ResturantsReview_card" key={restaurant.id}>
           <div className="Resturant-image">
             <img src={restaurant.Image} height="220px" width="270px" alt={restaurant.Name} />
           </div>
@@ -58,10 +58,10 @@ export default function Comments() {
         </div>
       )}
 
-      <h1>Restaurant Comments</h1>
+      <h1>Restaurant Reviews</h1>
       <div className="comments-list">
         {comments.length === 0 ? (
-          <p>No comments yet. Be the first to leave a comment!</p>
+          <p>No reviews yet. Be the first to leave a review!</p>
         ) : (
           comments.map((comment, index) => (
             <div className="comment" key={index}>
@@ -82,7 +82,7 @@ export default function Comments() {
         )}
       </div>
       <form className="comment-form" onSubmit={handleSubmit}>
-        <h2>Leave a Comment</h2>
+        <h2>Leave a Review</h2>
         <div className="rating-input">
           <label htmlFor="rating">Rating:</label>
           <div className="stars">
@@ -99,7 +99,7 @@ export default function Comments() {
           </div>
         </div>
         <div className="comment-input">
-          <label htmlFor="commentText">Comment:</label>
+          <label htmlFor="commentText">Review:</label>
           <textarea
             id="commentText"
             name="commentText"
@@ -109,7 +109,7 @@ export default function Comments() {
           />
         </div>
         <button className="submit-btn" type="submit">
-          Submit Comment
+          Submit Review
         </button>
       </form>
     </div>

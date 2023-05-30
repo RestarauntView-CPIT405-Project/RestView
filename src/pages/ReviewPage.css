@@ -1,70 +1,102 @@
 .comments-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.date {
+  color: #888;
+}
+
+.rating {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.filled {
+  color: #fcd830;
+}
+
+.comment-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-input textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  padding: 5px;
+}
+
+.submit-btn {
+  background-color: #fcd830;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e6b925;
+}
+
+.ResturantsReview_card:hover {
+  background-color: rgb(250, 249, 249);
   
-  h1 {
-    text-align: center;
-  }
-  
-  .comments-list {
-    margin-top: 20px;
-  }
-  
-  .comment {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .comment-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .username {
-    font-weight: bold;
-  }
-  
-  .date {
-    color: #888;
-  }
-  
-  .rating {
-    font-size: 30px;
-    color: #ccc;
-    cursor: pointer;
-  }
-  
-  .star.filled {
-    color: #fcd830;
-  }
-  
-  .comment-input label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .comment-input textarea {
-    width: 100%;
-    height: 100px;
-    resize: vertical;
-    padding: 5px;
-  }
-  
-  .submit-btn {
-    background-color: #fcd830;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-btn:hover {
-    background-color: #e6b925;
-  }
-  
+
+}
+
+/* Property to the Best dishes information of Best dishes section  */
+.Resturant_info_info {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Property to the Best dishes information in heading 3 of Best dishes section  */
+.Resturant_info_info h3 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(150, 20, 20);
+  margin: 18px;
+}
+
+.ResturantsReview_card {
+  background-color: white;
+  width: 20em;
+  transition: 0.8s ease;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 50%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  position: relative;
+
+}

@@ -8,8 +8,8 @@ export default function HomePage() {
         <div>
             <section className="main"> {/* cover page */}
                 <div>
-                    <h2>Welcome to Restaurants Views</h2>
-                    <h3>A website where you can rate and see resturants ratings</h3>
+                    <h2>Welcome to Rest View</h2>
+                    <h3>A place where you can rate and see restaurants ratings!</h3>
                     <a href="#Resturants" className="main_btn">See Restaurants</a>
                 </div>
             </section>
@@ -18,8 +18,6 @@ export default function HomePage() {
                     <h2 class="title">Restaurants</h2>
                     <div class="content">
                         {Restaurants.map((Restaurant) => (
-                            // TODO: Make that the card links to a page and passing the ID of the restaurant
-                            // for data retrieval.
                             <Link to="/reviewpage" state={{id : Restaurant.id}}>
                                 {/* <Link to={`/reviewpage/${Restaurant.id}?name=${Restaurant.Name}`}></Link> */}
                                 <div class="Resturants_card" key={Restaurant.id}>
